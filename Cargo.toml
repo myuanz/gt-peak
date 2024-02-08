@@ -6,10 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+default-args = "1.0.0"
 native-tls = "0.2.11"
 socket2 = "0.5.5"
 
 [profile.release]
 lto = true
 codegen-units = 1
-strip = true
+# strip = true
